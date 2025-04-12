@@ -48,7 +48,7 @@ const app = initializeApp(firebaseConfig);
 
 // Services
 const db = getFirestore(app);
-const auth = getAuth(app);
+// const auth = getAuth(app);
 const storage = getStorage(app);
 
 export { db, storage };

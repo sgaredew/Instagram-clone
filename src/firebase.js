@@ -35,7 +35,7 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAWAo2jy1cEI4g5MyENHyxAxQx9DS0xgiA",
-  authDomain: "clone-6abca.firebaseapp.com",
+//   authDomain: "clone-6abca.firebaseapp.com",
   projectId: "clone-6abca",
   storageBucket: "clone-6abca.appspot.com", // fixed `.firebasestorage.app` to `.appspot.com`
   messagingSenderId: "27544485688",

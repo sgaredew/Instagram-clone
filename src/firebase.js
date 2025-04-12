@@ -30,12 +30,12 @@
 // firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-// import { getAuth } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAWAo2jy1cEI4g5MyENHyxAxQx9DS0xgiA",
-//   authDomain: "clone-6abca.firebaseapp.com",
+  authDomain: "clone-6abca.firebaseapp.com",
   projectId: "clone-6abca",
   storageBucket: "clone-6abca.appspot.com", // fixed `.firebasestorage.app` to `.appspot.com`
   messagingSenderId: "27544485688",
@@ -48,7 +48,7 @@ const app = initializeApp(firebaseConfig);
 
 // Services
 const db = getFirestore(app);
-// const auth = getAuth(app);
+const auth = getAuth(app);
 const storage = getStorage(app);
 
-export { db, storage };
+export { db, auth,storage };
